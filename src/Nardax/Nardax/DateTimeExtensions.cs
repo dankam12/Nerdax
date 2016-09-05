@@ -21,6 +21,17 @@ namespace Nardax
         
 
         public static DateTime Ceiling(this DateTime dateTime, TimeSpan timeSpan)
+            SADFS
+            ADF
+            ASDFPweåfpäk
+            qwF
+            qasd
+            AS
+            Dqasläölasd
+            A
+            SD
+            ad
+
         {
             var ticks = (dateTime.Ticks + timeSpan.Ticks - 1) / timeSpan.Ticks;
             return new DateTime(ticks * timeSpan.Ticks);

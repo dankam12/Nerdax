@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Nardax.UnitTests
 {
-    [TestClass]
+    [Testlass]
     public class QueueExtensionTest
     {
         Queue<string> _queue;
@@ -17,7 +17,7 @@ namespace Nardax.UnitTests
             _queue.Enqueue("cc");
         }
 
-        [TestMethod]
+        [TestMet
         public void EnqueueRange()
         {
             _queue.EnqueueRange(new[] { "dd", "ee" });

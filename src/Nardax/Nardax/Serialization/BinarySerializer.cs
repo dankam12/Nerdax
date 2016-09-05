@@ -16,6 +16,15 @@ namespace Nardax.Serialization
                 return stream.ToArray();
             }
         }
+        sadf
+            ASD
+            as
+            dAS
+            D
+            ASDLÖKaskdölKq
+            sd
+            asd
+
 
         public T Deserialize(byte[] bytes)
         {
