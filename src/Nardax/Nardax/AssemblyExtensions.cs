@@ -6,6 +6,7 @@ namespace Nardax
 {
     /// <summary>
     //Hello World
+    // Damn this is fun!
     /// </summary>
     public static class AssemblyExtensions
     {
