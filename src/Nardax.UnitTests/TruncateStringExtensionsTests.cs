@@ -64,5 +64,14 @@ namespace Nardax.Tests
 
             Assert.AreEqual(expected, result);
         }
+
+        [TestMethod]
+        public void RemoveWhiteChars()
+        {
+            var Teststring = "i\twill  \tsurvive\t";
+            var result = Teststring.RemoveWhiteChars();
+            var expected = "iwillsurvive";
+            Assert.AreEqual(expected, result);
+}
     }
 }
