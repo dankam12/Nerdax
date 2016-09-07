@@ -1,0 +1,16 @@
+diff a/src/Nardax/Nardax/StringExtensions.cs b/src/Nardax/Nardax/StringExtensions.cs	(rejected hunks)
+@@ -19,14 +19,5 @@
+         }
+         // klipper av en sträng från höger
+ 
+-        public static string TruncateRight(this string value, int maxLength)
+-        {
+-            if (value.Length < maxLength)
+-            {
+-                return value;
+-            }
+-
+-            return value.Substring(0, maxLength);
+-        }
+     }
+ }
