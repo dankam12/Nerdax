@@ -1,0 +1,18 @@
+diff a/src/Nardax.UnitTests/TruncateStringExtensionsTests.cs b/src/Nardax.UnitTests/TruncateStringExtensionsTests.cs	(rejected hunks)
+@@ -35,5 +35,16 @@
+         }
+ 
+ 
++        [TestMethod]
++        public void TruncateLeft_ValueIsSmaller_TruncateRemovesLeftSideKAlleKila()
++        {
++            var expected = "789";
++
++            var result = _value.TruncateLeft(3);
++
++            Assert.AreEqual(expected, result);
++        }
++
++
+     }
+ }
