@@ -35,5 +35,16 @@ namespace Nardax.Tests
         }
 
 
+        [TestMethod]
+        public void TruncateLeft_ValueIsSmaller_TruncateRemovesLeftSideKAlleKila()
+        {
+            var expected = "789";
+
+            var result = _value.TruncateLeft(3);
+
+            Assert.AreEqual(expected, result);
+        }
+
+
     }
 }
