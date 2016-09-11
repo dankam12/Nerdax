@@ -1,10 +1,10 @@
 ﻿using System;
 using System.ComponentModel;
-<<<<<<< HEAD
+
 using System.Text;
-=======
+
 using System.Text.RegularExpressions;
->>>>>>> 760310c420e070f0f1353021a2101d31f48f8125
+
 
 namespace Nardax
 {
@@ -38,20 +38,7 @@ namespace Nardax
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public static string Repeat(this string value,int times)
+        public static string Repeat(this string value,int times = 5)
 
         { var sb = new StringBuilder();
 

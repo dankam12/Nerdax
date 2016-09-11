@@ -66,7 +66,7 @@ namespace Nardax.Tests
         }
 
         [TestMethod]
-<<<<<<< HEAD
+
         public void RepeatMe()
         {
             var expected = "käbbelkäbbelkäbbel";
@@ -74,7 +74,17 @@ namespace Nardax.Tests
             Assert.AreEqual(expected, result);
 
         }
-=======
+
+        [TestMethod]
+
+        public void RepeatMe_DefaultVärde()
+        {
+            var expected = "NyanCatNyanCatNyanCatNyanCatNyanCat";
+            var result = "NyanCat".Repeat();
+            Assert.AreEqual(expected, result);
+
+        }
+
         public void RemoveWhiteChars()
         {
             var Teststring = "i\twill  \tsurvive\t";
@@ -82,6 +92,6 @@ namespace Nardax.Tests
             var expected = "iwillsurvive";
             Assert.AreEqual(expected, result);
 }
->>>>>>> 760310c420e070f0f1353021a2101d31f48f8125
+
     }
 }
