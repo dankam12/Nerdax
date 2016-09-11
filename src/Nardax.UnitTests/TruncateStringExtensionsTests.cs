@@ -75,6 +75,7 @@ namespace Nardax.Tests
 
         }
 
+
         [TestMethod]
 
         public void RepeatMe_DefaultVärde()
@@ -85,13 +86,34 @@ namespace Nardax.Tests
 
         }
 
+
+
         public void RemoveWhiteChars()
         {
             var Teststring = "i\twill  \tsurvive\t";
             var result = Teststring.RemoveWhiteChars();
             var expected = "iwillsurvive";
             Assert.AreEqual(expected, result);
-}
+
+        }
+
+
+        [TestMethod]
+        public void AddCharBetween()
+        {
+            var testString = "abcde";
+            var expected = "a-b-c-d-e";
+            var result = testString = testString.AddCharBetween('-');
+
+            Assert.AreEqual(expected, result);
+        }
 
     }
-}
+
+      
+
+   
+
+
+    }
+

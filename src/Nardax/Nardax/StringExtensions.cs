@@ -38,7 +38,13 @@ namespace Nardax
 
 
 
-        public static string Repeat(this string value,int times = 5)
+
+ 
+
+
+
+        public static string Repeat(this string value,int times =5)
+
 
         { var sb = new StringBuilder();
 
@@ -57,6 +63,32 @@ namespace Nardax
             return Regex.Replace(value, "\\s","");
         }
 
+        public static string AddCharBetween(this string value, char c )
+        {
+
+            if (value == null)
+            {
+                return null;
+            }
+            var sb = new StringBuilder();
+
+            foreach (var X in value)
+            {
+                sb.Append(X);
+                sb.Append(c);
+            }
+
+            if (sb.Length > 1)
+            {
+                sb.Remove(sb.Length - 1, 1);
+            }
+
+           
+
+            return sb.ToString();
+        }
+
 
     }
+
 }
